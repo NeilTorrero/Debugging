@@ -86,6 +86,7 @@ void printDestination(Destination d, int pos, int option) {
 	switch (option) {
 		case BY_TIME:
 			printf("\tTime:\t\t%lf\n", getTimeFromBcn(d));
+			freeAll(d);
 			break;
 		case BY_DISTANCE:
 			printf("\tDistance:\t%lf\n", getDistanceFromBcn(d));
