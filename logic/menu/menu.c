@@ -94,7 +94,6 @@ void printDestination(Destination d, int pos, int option) {
 			printf("\tAvg Price:\t%lf\n", getAverageHotelPrice(d));
 			break;
 	}
-	freeAll(d);
 }
 
 void printPlanMenu() {
