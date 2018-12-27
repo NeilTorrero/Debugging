@@ -101,6 +101,7 @@ void readNewFile(List * l) {
 	    destroy(l);
 		*l = create();
 		readWholeFile(f, l);
+		fclose(f);
 	} else {
 		printFileError(input);
 	}
