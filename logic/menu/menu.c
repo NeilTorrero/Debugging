@@ -50,13 +50,13 @@ char * readUserString() {
 
 		if (i >= size) {
 			size *= 2;
-			resize(&ret, size);
+			ret = resize(ret, size);
 		}
 		scanf("%c", &tmp);
 		i++;
 	} while (tmp != '\n');
     ret[i] = '\0';
-	resize(&ret, i);
+	ret = resize(ret, i);
 
 	return ret;
 }
