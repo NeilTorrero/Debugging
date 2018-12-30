@@ -105,7 +105,7 @@ void readNewFile(List * l) {
 	} else {
 		printFileError(input);
 	}
-
+    free(input);
 }
 
 void execute(int option, List * l) {
