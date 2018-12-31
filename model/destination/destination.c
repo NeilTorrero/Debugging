@@ -184,7 +184,7 @@ char * readString(FILE * file) {
 	do {
 		ret[i] = tmp;
         i++;
-		if (i >=  size) {
+		if (i >= size) {
 			size *= 2;
 			ret = resize(ret, size);
 		}
