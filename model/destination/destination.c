@@ -66,7 +66,6 @@ void advanceInDirection(int *i, int *j, int direction) {
 			(*j)++;
 			break;
 		case WEST:
-		default:
 			(*i)--;
 			break;
 	}
